@@ -4,15 +4,15 @@ app.config(function ($routeProvider) {
   $routeProvider 
     .when('/books', { 
       controller: 'BookshelfController', 
-      templateUrl: 'views/bookshelf.html' 
+      templateUrl: 'readerbookshelf.html' 
     }) 
     .when('/books/:bookId', { 
       controller: 'BookController', 
-      templateUrl: 'views/book.html' 
+      templateUrl: 'readerbook.html' 
     })
     .when('/books/:bookId/chapters/:chapterId',{
         controller: 'ChapterController',
-        templateUrl: 'views/chapter.html'
+        templateUrl: 'readerchapter.html'
     })
     .otherwise({ 
       redirectTo: '/books' 
