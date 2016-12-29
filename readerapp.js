@@ -15,6 +15,6 @@ app.config(function ($routeProvider) {
         templateUrl: 'readerchapter.html'
     })
     .otherwise({ 
-      redirectTo: '/books' 
+      redirectTo: '/reader' 
     }); 
 });
