@@ -1,5 +1,5 @@
 app.factory('books', ['$http', function($http) {
-  return $http.get('https://s3.amazonaws.com/codecademy-content/courses/ltp4/books-api/books.json')
+  return $http.get('https://unaivero.github.io/reader/readerbookapi.json')
          .success(function(data) {
            return data;
          })
